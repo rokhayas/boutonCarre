@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>bouton1</title>
+	<style>
+#carree {
+    width: 150px;
+  	height: 150px;
+    border:4px solid blue;
+    color: white;
+    padding-bottom: 20px;
+    margin-left: 50px;
+
+}
+
+
+</style>
+</head>
+<body>
+<div id="carree"></div>
+<button onclick="myFunction1()">augmenter</button>
+<button onclick="myFunction2()">couleur</button>
+<button onclick="myFunction3()">initial</button>
+<button onclick="myFunction4()">masquer</button>
+<button onclick="myFunction5()">visible</button>
+<button onclick="myFunction6()">aug</button>
+
+
+
+<script>
+var num=0;
+	var carre = document.getElementById("carree");
+	function myFunction1(){
+		if(num==0){
+			carre.style.width = "250px";
+			carre.style.height = "250px";
+			num=1;
+		}else{
+			carre.style.width = "150px";
+			carre.style.height = "150px";
+			
+			num=0;
+		}
+		
+	}
+function myFunction2(){
+	carre.style.backgroundColor="red";
+}
+function myFunction3(){
+	carre.style.backgroundColor="white";
+}
+function myFunction4(){
+	carre.style.display="none";
+}
+function myFunction5(){
+	carre.style.display="block";
+}
+function myFunctions6(){
+	var myobjet;
+	myobjet.style.width="100px";
+	myobjet.style.height="100px";
+	while(myobjet.width<'300px'&& myobjet.height<'300px'){
+		myobjet.style.width+'10px';
+		myobjet.style.height+'10px';
+	}
+}
+
+</script>
+
+</body>
+</html>
